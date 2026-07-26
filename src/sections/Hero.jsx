@@ -85,7 +85,7 @@ const Hero = () => {
          transition={{ delay: 0.8, duration: 0.7 }}
        >
          <button
-           onClick={() => window.open('https://collabnest-iota.vercel.app/', '_blank')}
+           onClick={() => window.open(import.meta.env.VITE_APP_URL || 'https://collabnest-iota.vercel.app', '_blank')}
            className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-center border-0 cursor-pointer"
            style={{
              backgroundColor: 'var(--primary)',

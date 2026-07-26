@@ -120,7 +120,7 @@ const Footer = () => {
               <div>      
               
                 <a
-                  href="https://collabnest-iota.vercel.app/"
+                  href={import.meta.env.VITE_APP_URL || 'https://collabnest-iota.vercel.app'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors duration-300 hover:underline"
